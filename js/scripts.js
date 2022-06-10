@@ -2,6 +2,20 @@ $(() => {
 	// Ширина окна для ресайза
 	WW = $(window).width()
 
+	const scroller = scrollama();
+	// setup the instance, pass callback functions
+	scroller
+		.setup({
+			step: ".pre_title",
+		})
+		.onStepEnter((response) => {	
+			console.log(1);	
+			setTimeout(() => $(response.element).removeClass("animate__heartBeat"), 0);
+			setTimeout(() => $(response.element).addClass("animate__heartBeat"), 100);		
+		})
+		.onStepExit((response) => {
+			console.log(2);	
+		});
 
 	// Заголовки
 	if (window.innerWidth > 767) {
@@ -159,6 +173,48 @@ $(() => {
 		})
 	}
 })
+
+
+
+
+$(window).on('load', () => {
+	// Элементы первого блока
+	startOffsetTop = 280
+	endOffsetTop = $('.first_section .btn').offset().top
+	endOffsetLeft = $('.first_section .btn').offset().left + ($('.first_section .btn').width() * 0.25)
+	items = $('.first_section .items .item')
+	itemsOffsets = []
+	path = endOffsetTop - startOffsetTop
+
+	items.each(function () {
+		itemsOffsets.push({
+			offsetTop: $(this).offset().top,
+			offsetLeft: $(this).offset().left
+		})
+	})
+
+	$(window).on('scroll', () => {
+		// Элементы первого блока
+		if ($(window).scrollTop() > startOffsetTop && $(window).scrollTop() < endOffsetTop) {
+			let distance = $(window).scrollTop() / path - startOffsetTop / path + 50 / path
+
+			items.each(function (index) {
+				let itemPathTop = endOffsetTop - itemsOffsets[index].offsetTop,
+					itemPathLeft = endOffsetLeft - itemsOffsets[index].offsetLeft
+				$(this).css({
+					'margin-top': itemPathTop * distance + 'px',
+					'margin-left': itemPathLeft * distance + 'px'
+				})
+			})
+		}
+	})
+
+})
+
+
+
+
+
 
 
 

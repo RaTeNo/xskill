@@ -2,20 +2,21 @@ $(() => {
 	// Ширина окна для ресайза
 	WW = $(window).width()
 
+	AOS.init();
+	
 	const scroller = scrollama();
 	// setup the instance, pass callback functions
-	scroller
-		.setup({
-			step: ".pre_title",
-		})
-		.onStepEnter((response) => {	
-			console.log(1);	
-			setTimeout(() => $(response.element).removeClass("animate__heartBeat"), 0);
-			setTimeout(() => $(response.element).addClass("animate__heartBeat"), 100);		
-		})
-		.onStepExit((response) => {
-			console.log(2);	
-		});
+	scroller.setup({
+		step: ".pre_title"
+	})
+	.onStepEnter((response) => {				
+		setTimeout(() => $(response.element).removeClass("animate__heartBeat"), 0);
+		setTimeout(() => $(response.element).addClass("animate__heartBeat"), 100);		
+	})
+	.onStepExit((response) => {	
+	});
+
+	//animate__fadeInUp
 
 	// Заголовки
 	if (window.innerWidth > 767) {

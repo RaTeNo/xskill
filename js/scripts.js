@@ -3,7 +3,7 @@ $(() => {
 	WW = $(window).width()
 
 	AOS.init();
-	
+
 	const scroller = scrollama();
 	// setup the instance, pass callback functions
 	scroller.setup({
@@ -215,7 +215,27 @@ $(window).on('load', () => {
 
 
 
+$(window).scroll(function () { // Когда страница прокручивается
+  	const scroller_num = scrollama();
+	// setup the instance, pass callback functions
+	scroller_num.setup({
+		step: ".stats",
+		offset: 0.8
+	})
+	.onStepEnter((response) => {				
+		numAnimate()	
+	})
+	.onStepExit((response) => {	
+	});
+});
 
+
+function numAnimate(){
+	$('.stats .item .val').spincrement({
+        thousandSeparator: "",
+        duration: 2000
+    });
+}
 
 
 

@@ -711,7 +711,7 @@
     }
 
 
-    .trusted .pre_title
+    .trusted .pre_title2
     {
         font-size: 15px;
         line-height: 21px;
@@ -720,7 +720,7 @@
         padding-left: 88px;
     }
 
-    .trusted .pre_title:before
+    .trusted .pre_title2:before
     {
         width: 64px;
     }

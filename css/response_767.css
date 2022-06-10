@@ -1,0 +1,782 @@
+@media print,
+(max-width: 767px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size_title: 32px;
+    }
+
+
+
+    .key-features__badge
+    {
+        height: 44px;
+        margin-bottom: 12px;
+    }
+
+    .key-features__badge span
+    {
+        display: inline;
+    }
+
+
+    .key-features__badge-inner
+    {
+        position: relative;
+        top: 0;
+
+        height: 44px;
+    }
+
+    .key-features--automation .badge
+    {
+        width: auto;
+        height: 44px;
+        padding: 0 24px;
+
+        border-radius: 12px;
+    }
+
+    .key-features__badge-inner .badge:before
+    {
+        display: none;
+    }
+
+
+    .key-features__info
+    {
+        margin: 0;
+
+        transform: none;
+    }
+
+    .key-features__info-inner
+    {
+        transform: none;
+
+        opacity: 1;
+    }
+
+
+
+    /*----------
+        Tabs
+    ----------*/
+    .tabs
+    {
+        display: block;
+        overflow: auto;
+
+        width: calc(100% + 48px);
+        margin: 0 -24px 40px;
+        padding: 8px;
+
+        white-space: nowrap;
+
+        border-radius: 0;
+
+        scrollbar-color: transparent transparent !important;
+        scrollbar-width: thin !important;
+    }
+
+    .tabs::-webkit-scrollbar
+    {
+        width: 0 !important;
+        height: 0 !important;
+
+        background-color: transparent !important;
+    }
+
+    .tabs::-webkit-scrollbar-thumb
+    {
+        background-color: transparent !important;
+    }
+
+
+    .tabs button
+    {
+        font-size: 16px;
+        line-height: 22px;
+
+        display: inline-block;
+
+        max-width: none;
+        margin: 0;
+        padding: 10px 24px 12px;
+
+        vertical-align: top;
+    }
+
+
+
+    /*--------------
+        All link
+    --------------*/
+    .all_link
+    {
+        margin-top: 40px;
+    }
+
+
+    .all_link a
+    {
+        font-size: 16px;
+        line-height: 22px;
+
+        padding: 12px 32px 14px;
+    }
+
+
+
+    /*---------------
+        Accordion
+    ---------------*/
+    .accordion_item
+    {
+        border-radius: 10px;
+    }
+
+
+    .accordion_item .head
+    {
+        padding: 16px 72px 16px 20px;
+
+        border-width: 8px;
+    }
+
+
+    .accordion_item .head .title
+    {
+        font-size: 17px;
+        line-height: 23px;
+    }
+
+
+    .accordion_item .data
+    {
+        padding: 16px 24px 24px 28px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header
+    {
+        padding: 24px 0;
+    }
+
+
+    header .logo img
+    {
+        width: 136px;
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head
+    {
+        margin-bottom: 40px;
+    }
+
+
+    .block_head .pre_title
+    {
+        font-size: 19px;
+        line-height: 25px;
+
+        padding: 9px 20px 10px;
+    }
+
+
+    .block_head .title
+    {
+        line-height: 128%;
+    }
+
+
+    .block_head .desc,
+    .block_head.center .desc
+    {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+    .form .input
+    {
+        font-size: 16px;
+
+        height: 52px;
+        padding: 0 19px;
+    }
+
+
+    .form .submit_btn
+    {
+        font-size: 16px;
+
+        height: 52px;
+    }
+
+
+
+    /*-------------------
+        First section
+    -------------------*/
+    .first_section
+    {
+        margin-bottom: 100px;
+        padding: 132px 0 0;
+    }
+
+    .first_section:before
+    {
+        height: 1009px;
+    }
+
+
+    .first_section .title
+    {
+        font-size: 36px;
+        line-height: 44px;
+    }
+
+
+    .first_section .desc
+    {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+
+    .first_section .items
+    {
+        width: 432px;
+        height: 680px;
+        margin: 48px auto 0;
+    }
+
+
+    .first_section .items .item
+    {
+        font-size: 16px;
+    }
+
+
+    .first_section .items .icon
+    {
+        width: 44px;
+        height: 44px;
+        padding: 4px;
+    }
+
+
+    .first_section .items .item1
+    {
+        top: 0;
+        left: 0;
+    }
+
+    .first_section .items .item2
+    {
+        top: 19.94%;
+        left: 0;
+    }
+
+    .first_section .items .item3
+    {
+        top: 0;
+        left: 58.15%;
+    }
+
+    .first_section .items .item4
+    {
+        top: 17.58%;
+        left: 53.22%;
+    }
+
+    .first_section .items .item5
+    {
+        top: 38.06%;
+        left: 0;
+    }
+
+    .first_section .items .item6
+    {
+        top: 34.67%;
+        left: 57.15%;
+    }
+
+    .first_section .items .item7
+    {
+        top: 54.7%;
+        left: 52.65%;
+    }
+
+    .first_section .items .item8
+    {
+        top: 54.45%;
+        left: 6%;
+    }
+
+    .first_section .items .item9
+    {
+        top: 71.77%;
+        left: 0;
+    }
+
+    .first_section .items .item10
+    {
+        top: 72.77%;
+        left: 50.59%;
+    }
+
+    .first_section .items .item11
+    {
+        top: 87.12%;
+        left: 33.24%;
+    }
+
+
+    .first_section .btn
+    {
+        width: 260px;
+        height: 100px;
+        margin-top: 60px;
+    }
+
+
+    .first_section .btn .icon
+    {
+        width: 68px;
+        height: 68px;
+        margin-right: 16px;
+    }
+
+    .first_section .btn .icon svg
+    {
+        width: 36px;
+        height: 36px;
+    }
+
+
+    .first_section .btn img
+    {
+        width: 128px;
+    }
+
+
+
+    /*---------------
+        Who needs
+    ---------------*/
+    .who_needs
+    {
+        margin-bottom: 72px;
+    }
+
+
+    .who_needs .block_head
+    {
+        margin-bottom: 40px;
+    }
+
+
+    .who_needs .row
+    {
+        margin-left: 0;
+    }
+
+    .who_needs .row > *
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+    .who_needs .tooltip .mini_modal,
+    .who_needs .tooltip .mini_modal.active,
+    .who_needs .item:nth-child(3n) .tooltip .mini_modal,
+    .who_needs .item:nth-child(3n) .tooltip .mini_modal.active
+    {
+        right: -20px;
+        left: auto;
+
+        width: 380px;
+        margin-left: 0;
+    }
+
+
+    .who_needs .tooltip .mini_modal:after,
+    .who_needs .item:nth-child(3n) .tooltip .mini_modal:after
+    {
+        right: 24px;
+        left: auto;
+    }
+
+
+
+    /*----------------
+        Advantages
+    ----------------*/
+    .advantages
+    {
+        margin-bottom: 72px;
+        padding: 72px 0;
+    }
+
+
+    .advantages .block_head
+    {
+        margin-bottom: 40px;
+    }
+
+
+    .advantages .row
+    {
+        margin-left: 0;
+    }
+
+    .advantages .row > *
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+
+    /*-------------
+        Modules
+    -------------*/
+    .modules
+    {
+        margin-bottom: 72px;
+    }
+
+
+    .modules .module
+    {
+        display: block;
+    }
+
+
+    .modules .module .video_link
+    {
+        display: block;
+
+        width: 352px;
+        max-width: 100%;
+        margin: 0 auto 24px;
+    }
+
+
+    .modules .module .data
+    {
+        width: 100%;
+    }
+
+
+
+    /*-----------
+        Stats
+    -----------*/
+    .stats .block_head
+    {
+        margin-bottom: 40px;
+    }
+
+
+    .stats .item
+    {
+        width: 50%;
+
+        text-align: center;
+    }
+
+    .stats .item .val.alignright
+    {
+        text-align: center;
+    }
+
+
+
+    /*-------------
+        Trusted
+    -------------*/
+    .trusted
+    {
+        margin-bottom: 72px;
+    }
+
+
+    .trusted .logos
+    {
+        width: calc(100% + 32px);
+        max-width: calc(100% + 32px);
+        margin-top: 32px;
+
+        order: 2;
+    }
+
+    .trusted .logos > *
+    {
+        height: 100px;
+    }
+
+
+    .trusted .data
+    {
+        width: 100%;
+    }
+
+
+
+    /*--------------
+        Articles
+    --------------*/
+    .articles
+    {
+        margin-bottom: 72px;
+    }
+
+
+    .articles .block_head
+    {
+        margin-bottom: 40px;
+    }
+
+
+    .articles .article .thumb
+    {
+        width: 160px;
+        height: 114px;
+
+        border-radius: 10px;
+    }
+
+    .articles .article .thumb + *
+    {
+        width: calc(100% - 180px);
+    }
+
+
+
+    /*-----------------
+        Order block
+    -----------------*/
+    .order_block
+    {
+        margin-bottom: 72px;
+        padding: 60px 0 72px;
+    }
+
+
+    .order_block .block_head
+    {
+        margin-bottom: 36px;
+    }
+
+
+    .order_block .form
+    {
+        width: 100%;
+    }
+
+    .order_block .form .line
+    {
+        width: calc(100% - 200px);
+    }
+
+    .order_block .form .submit
+    {
+        width: 184px;
+    }
+
+
+
+    /*---------
+        FAQ
+    ---------*/
+    .faq
+    {
+        margin-bottom: 72px;
+    }
+
+
+
+
+    /*------------
+        Schema
+    ------------*/
+    .schema
+    {
+        margin-bottom: 72px;
+    }
+
+
+    .schema .block_head
+    {
+        margin-bottom: 40px;
+    }
+
+
+
+    .schema .data .title
+    {
+        font-size: 26px;
+    }
+
+
+    .schema .data .desc
+    {
+        font-size: 15px;
+        line-height: 23px;
+    }
+
+
+    .schema .data ol
+    {
+        margin-top: 24px;
+    }
+
+
+    .schema .data li
+    {
+        font-size: 16px;
+        line-height: 22px;
+
+        padding-left: 52px;
+    }
+
+    .schema .data li + li
+    {
+        margin-top: 12px;
+    }
+
+
+
+    .schema .quote .photo
+    {
+        width: 350px;
+        height: 400px;
+    }
+
+
+    .schema .quote .info
+    {
+        position: relative;
+        right: 0;
+        bottom: 0;
+
+        width: calc(100% - 48px);
+        margin-top: -120px;
+        padding: 24px 24px 24px 40px;
+    }
+
+
+    .schema .quote .text
+    {
+        font-size: 15px;
+        line-height: 23px;
+    }
+
+
+    .schema .quote .cite
+    {
+        font-size: 16px;
+        line-height: 22px;
+
+        width: 100%;
+        margin-top: 24px;
+    }
+
+
+    .schema .quote .stars
+    {
+        margin-top: 8px;
+        margin-left: 0;
+    }
+
+    .schema .quote .stars .icon + .icon
+    {
+        margin-left: 2px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer
+    {
+        padding: 64px 0 32px;
+    }
+
+
+
+    footer .logo
+    {
+        width: calc(50% - 24px);
+    }
+
+    footer .logo img
+    {
+        width: 140px;
+    }
+
+
+    footer .slogan
+    {
+        font-size: 15px;
+        line-height: 19px;
+
+        width: calc(50% - 24px);
+    }
+
+
+    footer .text
+    {
+        font-size: 15px;
+        line-height: 21px;
+
+        width: calc(50% - 24px);
+        margin-top: 32px;
+    }
+
+    footer .text br
+    {
+        display: none;
+    }
+
+
+    footer .email,
+    footer .phone
+    {
+        font-size: 16px;
+        line-height: 22px;
+
+        width: calc(50% - 24px);
+        margin-top: 28px;
+    }
+
+
+    footer .copyright
+    {
+        font-size: 15px;
+        line-height: 21px;
+
+        margin-top: 32px;
+    }
+}

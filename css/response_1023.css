@@ -1,0 +1,1036 @@
+@media print,
+(max-width: 1023px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size_title: 36px;
+    }
+
+
+
+    .key-features__badge-inner .badge
+    {
+        font-size: 20px;
+        line-height: 26px;
+
+        height: calc(100% - (100% - 48px)*var(--progress, 0));
+    }
+
+    .key-features--automation .badge
+    {
+        width: calc(100% + 12rem - (100% + 12rem - 232px)*var(--progress, 0));
+    }
+
+
+
+    /*----------
+        Tabs
+    ----------*/
+    .tabs
+    {
+        display: block;
+        overflow: auto;
+
+        width: calc(100% + 48px);
+        margin: 0 -24px 40px;
+        padding: 8px;
+
+        white-space: nowrap;
+
+        border-radius: 0;
+
+        scrollbar-color: transparent transparent !important;
+        scrollbar-width: thin !important;
+    }
+
+    .tabs::-webkit-scrollbar
+    {
+        width: 0 !important;
+        height: 0 !important;
+
+        background-color: transparent !important;
+    }
+
+    .tabs::-webkit-scrollbar-thumb
+    {
+        background-color: transparent !important;
+    }
+
+
+    .tabs button
+    {
+        font-size: 16px;
+        line-height: 22px;
+
+        display: inline-block;
+
+        max-width: none;
+        margin: 0;
+        padding: 10px 24px 12px;
+
+        vertical-align: top;
+    }
+
+
+
+    /*--------------
+        All link
+    --------------*/
+    .all_link
+    {
+        margin-top: 40px;
+    }
+
+
+    .all_link a
+    {
+        font-size: 16px;
+        line-height: 22px;
+
+        padding: 12px 32px 14px;
+    }
+
+
+
+    /*---------------
+        Accordion
+    ---------------*/
+    .accordion_item
+    {
+        border-radius: 12px;
+    }
+
+    .accordion_item + .accordion_item
+    {
+        margin-top: 20px;
+    }
+
+
+    .accordion_item .head
+    {
+        padding: 16px 72px 16px 24px;
+
+        border-width: 8px;
+    }
+
+
+    .accordion_item .head .title
+    {
+        font-size: 19px;
+    }
+
+
+    .accordion_item .head .icon
+    {
+        right: 20px;
+
+        width: 13px;
+        height: 20px;
+    }
+
+
+    .accordion_item .data
+    {
+        font-size: 15px;
+        line-height: 21px;
+
+        padding: 16px 24px 24px 32px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header
+    {
+        padding: 28px 0;
+
+        transition: background .2s linear;
+    }
+
+    .menu_open header
+    {
+        background: var(--bg);
+    }
+
+
+    header .logo img
+    {
+        width: 152px;
+    }
+
+
+    header .menu
+    {
+        position: absolute;
+        top: 100%;
+        left: 0;
+
+        display: block;
+
+        width: 100%;
+
+        transition: transform .2s linear;
+        transform: translateX(100%);
+
+        border-top: 1px solid #e7e7e7;
+        border-bottom: 1px solid #e7e7e7;
+        background: #fff;
+    }
+
+    header .menu.show
+    {
+        transform: translateX(0);
+    }
+
+
+    header .menu_item + .menu_item
+    {
+        margin-left: 0;
+
+        border-top: 1px solid #e7e7e7;
+    }
+
+
+    header .menu_item > a
+    {
+        font-size: 18px;
+        line-height: 20px;
+
+        display: flex;
+
+        padding: 19px 24px 23px;
+
+        text-align: center;
+
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+
+    header .menu_item > a.btn
+    {
+        padding: 19px 24px 23px;
+
+        border-radius: 0;
+    }
+
+
+    header .menu_item > a .arr
+    {
+        position: relative;
+        top: 0;
+        right: 0;
+
+        margin: 2px 0 0 8px;
+    }
+
+
+    header .menu_item > a.active
+    {
+        color: #fff;
+
+        background: #1d8a9b;
+    }
+
+
+
+    header .mob_menu_btn
+    {
+        display: flex;
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head
+    {
+        margin-bottom: 44px;
+    }
+
+
+    .block_head .pre_title
+    {
+        font-size: 20px;
+        line-height: 26px;
+
+        padding: 9px 24px 10px;
+
+        border-radius: 12px;
+    }
+
+
+    .block_head .title
+    {
+        line-height: 128%;
+    }
+
+
+    .block_head .desc,
+    .block_head.center .desc
+    {
+        font-size: 17px;
+        line-height: 25px;
+
+        width: 100%;
+        margin-top: 16px;
+    }
+
+
+
+    /*-------------------
+        First section
+    -------------------*/
+    .first_section
+    {
+        margin-bottom: 100px;
+        padding: 152px 0 0;
+    }
+
+    .first_section:before
+    {
+        height: 800px;
+    }
+
+
+    .first_section .title
+    {
+        font-size: 44px;
+    }
+
+
+    .first_section .desc
+    {
+        font-size: 18px;
+        line-height: 26px;
+
+        width: 100%;
+        margin-top: 24px;
+    }
+
+
+    .first_section .items
+    {
+        height: 520px;
+        margin-top: 60px;
+    }
+
+
+    .first_section .items .item
+    {
+        font-size: 17px;
+    }
+
+
+    .first_section .items .icon
+    {
+        width: 48px;
+        height: 48px;
+        padding: 4px;
+    }
+
+
+    .first_section .items .item1
+    {
+        top: 6.93%;
+        left: 1.53%;
+    }
+
+    .first_section .items .item2
+    {
+        top: 0;
+        left: 39.67%;
+    }
+
+    .first_section .items .item3
+    {
+        top: 4.25%;
+        left: 71.15%;
+    }
+
+    .first_section .items .item4
+    {
+        top: 27.58%;
+        left: 71.22%;
+    }
+
+    .first_section .items .item5
+    {
+        top: 25.06%;
+        left: 36.19%;
+    }
+
+    .first_section .items .item6
+    {
+        top: 48.67%;
+        left: 41.15%;
+    }
+
+    .first_section .items .item7
+    {
+        top: 54.7%;
+        left: 71.65%;
+    }
+
+    .first_section .items .item8
+    {
+        top: 32.45%;
+        left: 2%;
+    }
+
+    .first_section .items .item9
+    {
+        top: 53.77%;
+        left: 10.41%;
+    }
+
+    .first_section .items .item10
+    {
+        top: 76.77%;
+        left: 22.59%;
+    }
+
+    .first_section .items .item11
+    {
+        top: 74.12%;
+        left: 55.24%;
+    }
+
+
+    .first_section .btn
+    {
+        width: 300px;
+        height: 112px;
+        margin-top: 52px;
+    }
+
+
+    .first_section .btn .icon
+    {
+        width: 76px;
+        height: 76px;
+        margin-right: 20px;
+    }
+
+    .first_section .btn .icon svg
+    {
+        width: 40px;
+        height: 40px;
+    }
+
+
+    .first_section .btn img
+    {
+        width: 148px;
+    }
+
+
+
+    /*---------------
+        Who needs
+    ---------------*/
+    .who_needs
+    {
+        margin-bottom: 80px;
+    }
+
+
+    .who_needs .block_head
+    {
+        margin-bottom: 48px;
+    }
+
+
+    .who_needs .row > *
+    {
+        width: calc(50% - 24px);
+    }
+
+
+    .who_needs .item
+    {
+        padding: 76px 28px 28px;
+    }
+
+
+    .who_needs .item .title
+    {
+        font-size: 21px;
+        line-height: 25px;
+    }
+
+
+    .who_needs .item .desc
+    {
+        font-size: 15px;
+        line-height: 21px;
+    }
+
+
+
+    .who_needs .tooltip .mini_modal,
+    .who_needs .tooltip .mini_modal.active
+    {
+        bottom: calc(100% + 20px);
+
+        width: 320px;
+        margin-left: -160px;
+        padding: 20px 56px 20px 20px;
+    }
+
+    .who_needs .item:nth-child(3n) .tooltip .mini_modal,
+    .who_needs .item:nth-child(3n) .tooltip .mini_modal.active
+    {
+        right: auto;
+        left: 50%;
+
+        margin-left: -160px;
+    }
+
+    .who_needs .item:nth-child(2n) .tooltip .mini_modal,
+    .who_needs .item:nth-child(2n) .tooltip .mini_modal.active
+    {
+        right: -20px;
+        left: auto;
+
+        margin-left: 0;
+    }
+
+
+    .who_needs .tooltip .mini_modal:after
+    {
+        width: 20px;
+        height: 10px;
+
+        border-top-width: 10px;
+        border-right-width: 10px;
+        border-left-width: 10px;
+    }
+
+    .who_needs .item:nth-child(3n) .tooltip .mini_modal:after
+    {
+        right: 0;
+        left: 0;
+    }
+
+    .who_needs .item:nth-child(2n) .tooltip .mini_modal:after
+    {
+        right: 24px;
+        left: auto;
+    }
+
+
+    .who_needs .tooltip .close_btn,
+    .who_needs .tooltip .close_btn .icon
+    {
+        width: 24px;
+        height: 24px;
+    }
+
+
+    .who_needs .tooltip .title
+    {
+        font-size: 19px;
+        line-height: 23px;
+    }
+
+    .who_needs .tooltip .desc
+    {
+        font-size: 14px;
+        line-height: 20px;
+
+        margin-top: 8px;
+        padding-left: 0;
+    }
+
+
+
+    /*----------------
+        Advantages
+    ----------------*/
+    .advantages
+    {
+        margin-bottom: 88px;
+        padding: 80px 0;
+    }
+
+
+    .advantages .block_head
+    {
+        margin-bottom: 48px;
+    }
+
+
+    .advantages .row > *
+    {
+        width: calc(50% - 32px);
+    }
+
+
+    .advantages .item .name
+    {
+        font-size: 19px;
+        line-height: 25px;
+    }
+
+
+
+    /*-------------
+        Modules
+    -------------*/
+    .modules
+    {
+        margin-bottom: 88px;
+    }
+
+
+    .modules .module .video_link
+    {
+        width: calc(50% - 24px);
+        margin-left: 0;
+
+        align-self: center;
+    }
+
+
+    .modules .module .video_link img:not(.bg)
+    {
+        width: 352px;
+    }
+
+
+    .modules .module .video_link .bg
+    {
+        left: -24px;
+
+        width: 380px;
+        height: auto;
+    }
+
+
+    .modules .module .video_link .icon
+    {
+        width: 76px;
+        height: 76px;
+        padding-left: 4px;
+    }
+
+    .modules .module .video_link .icon svg
+    {
+        width: 22px;
+        height: 28px;
+    }
+
+
+    .modules .module .data
+    {
+        width: calc(50% - 24px);
+    }
+
+
+    .modules .module .title
+    {
+        font-size: 28px;
+    }
+
+
+    .modules .module .desc
+    {
+        font-size: 15px;
+        line-height: 23px;
+    }
+
+
+    .modules .module ul
+    {
+        margin-top: 28px;
+    }
+
+
+    .modules .module li + li
+    {
+        margin-top: 16px;
+    }
+
+    .modules .module li
+    {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+
+
+    /*-----------
+        Stats
+    -----------*/
+    .stats .block_head
+    {
+        margin-bottom: 48px;
+    }
+
+
+    .stats .item
+    {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+
+    .stats .item .val
+    {
+        font-size: 60px;
+    }
+
+
+    .stats .trusted
+    {
+        margin-top: 60px;
+    }
+
+
+
+    /*-------------
+        Trusted
+    -------------*/
+    .trusted
+    {
+        margin-bottom: 88px;
+    }
+
+
+    .trusted .logos > *
+    {
+        height: 120px;
+    }
+
+
+    .trusted .pre_title
+    {
+        font-size: 15px;
+        line-height: 21px;
+
+        margin-bottom: 20px;
+        padding-left: 88px;
+    }
+
+    .trusted .pre_title:before
+    {
+        width: 64px;
+    }
+
+
+    .trusted .title
+    {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+
+    .trusted .desc
+    {
+        font-size: 15px;
+        line-height: 21px;
+    }
+
+
+    .trusted .link
+    {
+        font-size: 16px;
+        line-height: 22px;
+
+        margin-top: 28px;
+        padding: 12px 28px 14px;
+    }
+
+
+
+    /*--------------
+        Articles
+    --------------*/
+    .articles .block_head
+    {
+        margin-bottom: 48px;
+    }
+
+
+    .articles .row .list
+    {
+        width: 100%;
+    }
+
+    .articles .row .list > * + *
+    {
+        margin-top: 24px;
+    }
+
+
+
+    .articles .article .date
+    {
+        font-size: 13px;
+        line-height: 21px;
+
+        padding: 0 8px;
+    }
+
+
+
+    .articles .article.big
+    {
+        width: 100%;
+        margin-bottom: 48px;
+    }
+
+
+    .articles .article.big .name
+    {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+
+    .articles .article.big .desc
+    {
+        width: 100%;
+        margin-top: 16px;
+    }
+
+
+
+    /*-----------------
+        Order block
+    -----------------*/
+    .order_block
+    {
+        padding: 60px 0 80px;
+    }
+
+
+    .order_block .form
+    {
+        width: 600px;
+    }
+
+    .order_block .form .line
+    {
+        width: calc(100% - 248px);
+    }
+
+    .order_block .form .submit
+    {
+        width: 224px;
+    }
+
+
+
+    /*---------
+        FAQ
+    ---------*/
+    .faq
+    {
+        margin-bottom: 88px;
+    }
+
+
+
+
+    /*------------
+        Schema
+    ------------*/
+    .schema
+    {
+        margin-bottom: 88px;
+    }
+
+
+    .schema .block_head
+    {
+        margin-bottom: 48px;
+    }
+
+
+    .schema .data
+    {
+        width: 100%;
+    }
+
+
+    .schema .data .title
+    {
+        font-size: 28px;
+
+        margin-bottom: 12px;
+    }
+
+
+    .schema .data .desc
+    {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+
+    .schema .data ol
+    {
+        margin-top: 28px;
+    }
+
+
+    .schema .data li
+    {
+        font-size: 16px;
+        line-height: 22px;
+
+        min-height: 36px;
+        padding-left: 60px;
+    }
+
+    .schema .data li:before
+    {
+        font-size: 19px;
+        line-height: 36px;
+
+        width: 36px;
+        height: 36px;
+    }
+
+    .schema .data li + li
+    {
+        margin-top: 8px;
+    }
+
+
+
+    .schema .quote
+    {
+        position: relative;
+
+        width: 100%;
+        margin-top: 40px;
+    }
+
+
+    .schema .quote .photo
+    {
+        width: 380px;
+        height: 444px;
+    }
+
+
+    .schema .quote .info
+    {
+        position: absolute;
+        right: 0;
+        bottom: 24px;
+
+        width: calc(100% - 220px);
+        margin-top: 0;
+        padding: 28px 28px 28px 40px;
+    }
+
+
+    .schema .quote .text
+    {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .schema .quote .text:before
+    {
+        left: -20px;
+    }
+
+
+    .schema .quote .cite
+    {
+        font-size: 17px;
+        line-height: 23px;
+
+        margin-top: 24px;
+    }
+
+
+    .schema .quote .stars
+    {
+        margin-top: 24px;
+    }
+
+    .schema .quote .stars .icon + .icon
+    {
+        margin-left: 1px;
+    }
+
+    .schema .quote .stars .icon
+    {
+        width: 18px;
+        height: 18px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer
+    {
+        padding: 64px 0 40px;
+    }
+
+
+
+    footer .logo
+    {
+        width: calc(50% - 32px);
+    }
+
+    footer .logo img
+    {
+        width: 160px;
+    }
+
+
+    footer .slogan
+    {
+        font-size: 16px;
+        line-height: 20px;
+
+        width: calc(50% - 32px);
+    }
+
+
+    footer .text
+    {
+        font-size: 16px;
+        line-height: 22px;
+
+        width: calc(50% - 32px);
+        margin-top: 40px;
+    }
+
+
+    footer .email,
+    footer .phone
+    {
+        font-size: 17px;
+        line-height: 23px;
+
+        width: calc(50% - 32px);
+        margin-top: 32px;
+    }
+
+
+    footer .copyright
+    {
+        font-size: 16px;
+        line-height: 22px;
+
+        margin-top: 36px;
+    }
+}

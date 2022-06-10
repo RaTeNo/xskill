@@ -1,0 +1,1033 @@
+@media print,
+(max-width: 1279px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size: 15px;
+        --font_size_title: 40px;
+    }
+
+
+    html.custom_scroll ::-webkit-scrollbar
+    {
+        width: 5px;
+        height: 5px;
+    }
+
+
+    .cont
+    {
+        padding: 0 24px;
+    }
+
+
+
+    .key-features__badge-inner .badge
+    {
+        font-size: 22px;
+        line-height: 28px;
+
+        height: calc(100% - (100% - 52px)*var(--progress, 0));
+    }
+
+    .key-features--automation .badge
+    {
+        width: calc(100% + 12rem - (100% + 12rem - 260px)*var(--progress, 0));
+    }
+
+
+
+    /*----------
+        Tabs
+    ----------*/
+    .tabs
+    {
+        margin-bottom: 52px;
+        padding: 8px;
+
+        border-radius: 60px;
+    }
+
+
+    .tabs button
+    {
+        font-size: 16px;
+        line-height: 22px;
+
+        padding: 10px 19px 12px;
+    }
+
+
+
+    /*--------------
+        All link
+    --------------*/
+    .all_link
+    {
+        margin-top: 48px;
+    }
+
+
+    .all_link a
+    {
+        font-size: 17px;
+        line-height: 23px;
+
+        padding: 16px 36px 18px;
+    }
+
+
+
+    /*---------------
+        Accordion
+    ---------------*/
+    .accordion_item + .accordion_item
+    {
+        margin-top: 24px;
+    }
+
+
+    .accordion_item .head
+    {
+        padding: 20px 80px 20px 28px;
+
+        border-width: 10px;
+    }
+
+
+    .accordion_item .head .title
+    {
+        font-size: 20px;
+    }
+
+
+    .accordion_item .head .icon
+    {
+        right: 20px;
+
+        width: 13px;
+        height: 20px;
+    }
+
+
+    .accordion_item .data
+    {
+        font-size: 16px;
+        line-height: 22px;
+
+        padding: 16px 28px 28px 38px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header
+    {
+        padding: 32px 0;
+    }
+
+
+    header .logo img
+    {
+        width: 160px;
+    }
+
+
+    header .menu_item + .menu_item
+    {
+        margin-left: 44px;
+    }
+
+    header .menu_item > a
+    {
+        font-size: 17px;
+    }
+
+    header .menu_item > a.btn
+    {
+        padding: 10px 20px 12px;
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head
+    {
+        margin-bottom: 48px;
+    }
+
+
+    .block_head .pre_title
+    {
+        font-size: 22px;
+        line-height: 28px;
+
+        margin-bottom: 12px;
+        padding: 11px 28px 12px;
+    }
+
+
+    .block_head .desc,
+    .block_head.center .desc
+    {
+        font-size: 19px;
+        line-height: 27px;
+
+        width: 788px;
+    }
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+    .form .input
+    {
+        font-size: 17px;
+
+        height: 60px;
+        padding: 0 24px;
+    }
+
+
+    .form .submit_btn
+    {
+        font-size: 17px;
+
+        height: 60px;
+    }
+
+
+
+    /*-------------------
+        First section
+    -------------------*/
+    .first_section
+    {
+        margin-bottom: 132px;
+        padding: 180px 0 0;
+    }
+
+    .first_section:before
+    {
+        height: 872px;
+    }
+
+
+    .first_section .title
+    {
+        font-size: 50px;
+    }
+
+
+    .first_section .desc
+    {
+        font-size: 21px;
+
+        width: 788px;
+        margin-top: 28px;
+    }
+
+
+    .first_section .items
+    {
+        height: 460px;
+        margin-top: 72px;
+    }
+
+
+    .first_section .items .item
+    {
+        font-size: 18px;
+
+        padding: 20px;
+    }
+
+
+    .first_section .items .icon
+    {
+        margin-right: 12px;
+    }
+
+
+    .first_section .items .item4
+    {
+        top: 19.58%;
+        left: 78.22%;
+    }
+
+    .first_section .items .item7
+    {
+        top: 52.7%;
+        left: 78.65%;
+    }
+
+    .first_section .items .item10
+    {
+        left: 45.59%;
+    }
+
+    .first_section .items .item11
+    {
+        left: 71.24%;
+    }
+
+
+    .first_section .btn
+    {
+        width: 360px;
+        height: 140px;
+        margin-top: 100px;
+    }
+
+
+    .first_section .btn .icon
+    {
+        width: 88px;
+        height: 88px;
+        margin-right: 24px;
+    }
+
+    .first_section .btn .icon svg
+    {
+        width: 48px;
+        height: 48px;
+    }
+
+
+    .first_section .btn img
+    {
+        width: 180px;
+    }
+
+
+
+    /*---------------
+        Who needs
+    ---------------*/
+    .who_needs
+    {
+        margin-bottom: 88px;
+    }
+
+
+    .who_needs .block_head
+    {
+        margin-bottom: 52px;
+    }
+
+
+    .who_needs .row
+    {
+        margin-bottom: -40px;
+        margin-left: -24px;
+    }
+
+    .who_needs .row > *
+    {
+        width: calc(33.333% - 24px);
+        margin-top: 32px;
+        margin-bottom: 40px;
+        margin-left: 24px;
+    }
+
+
+    .who_needs .item
+    {
+        padding: 80px 28px 28px;
+    }
+
+
+    .who_needs .item .thumb
+    {
+        top: -32px;
+        left: 28px;
+
+        width: 88px;
+        height: 88px;
+    }
+
+
+    .who_needs .item .title
+    {
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+
+    .who_needs .item .desc
+    {
+        font-size: 16px;
+        line-height: 22px;
+
+        margin-top: 20px;
+        padding-left: 44px;
+    }
+
+    .who_needs .item .desc .icon
+    {
+        width: 28px;
+        height: 28px;
+    }
+
+
+    .who_needs .tooltip
+    {
+        top: 20px;
+        right: 20px;
+    }
+
+
+    .who_needs .tooltip .btn,
+    .who_needs .tooltip .btn svg
+    {
+        width: 28px;
+        height: 28px;
+    }
+
+
+    .who_needs .tooltip .mini_modal,
+    .who_needs .tooltip .mini_modal.active
+    {
+        bottom: calc(100% + 24px);
+
+        width: 360px;
+        margin-left: -180px;
+        padding: 24px 64px 24px 24px;
+    }
+
+    .who_needs .item:nth-child(3n) .tooltip .mini_modal,
+    .who_needs .item:nth-child(3n) .tooltip .mini_modal.active
+    {
+        right: -20px;
+    }
+
+
+    .who_needs .tooltip .mini_modal:after
+    {
+        width: 24px;
+        height: 12px;
+
+        border-top-width: 12px;
+        border-right-width: 12px;
+        border-left-width: 12px;
+    }
+
+    .who_needs .item:nth-child(3n) .tooltip .mini_modal:after
+    {
+        right: 24px;
+    }
+
+
+    .who_needs .tooltip .close_btn,
+    .who_needs .tooltip .close_btn .icon
+    {
+        width: 28px;
+        height: 28px;
+    }
+
+
+    .who_needs .tooltip .title
+    {
+        font-size: 21px;
+        line-height: 25px;
+    }
+
+    .who_needs .tooltip .desc
+    {
+        font-size: 15px;
+        line-height: 21px;
+
+        margin-top: 12px;
+        padding-left: 0;
+    }
+
+
+
+    /*----------------
+        Advantages
+    ----------------*/
+    .advantages
+    {
+        margin-bottom: 100px;
+        padding: 88px 0;
+    }
+
+
+    .advantages .block_head
+    {
+        margin-bottom: 52px;
+    }
+
+
+    .advantages .row
+    {
+        margin-left: -24px;
+    }
+
+    .advantages .row > *
+    {
+        width: calc(33.333% - 32px);
+        margin-top: 40px;
+        margin-left: 24px;
+    }
+
+
+    .advantages .item
+    {
+        padding: 72px 24px 28px;
+    }
+
+
+    .advantages .item .icon
+    {
+        top: -40px;
+
+        width: 88px;
+        height: 88px;
+        padding: 20px;
+    }
+
+
+    .advantages .item .name
+    {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+
+    .advantages .item .desc
+    {
+        font-size: 15px;
+        line-height: 23px;
+
+        margin-top: 20px;
+    }
+
+
+
+    /*-------------
+        Modules
+    -------------*/
+    .modules
+    {
+        margin-bottom: 100px;
+    }
+
+
+    .modules .module .video_link
+    {
+        margin-left: 24px;
+    }
+
+
+    .modules .module .video_link img:not(.bg)
+    {
+        width: 400px;
+    }
+
+
+    .modules .module .video_link .bg
+    {
+        left: -32px;
+
+        width: 480px;
+        height: 406px;
+    }
+
+
+    .modules .module .video_link .icon
+    {
+        width: 88px;
+        height: 88px;
+        padding-left: 5px;
+    }
+
+    .modules .module .video_link .icon svg
+    {
+        width: 28px;
+        height: 34px;
+    }
+
+
+    .modules .module .data
+    {
+        width: calc(50% - 40px);
+    }
+
+
+    .modules .module .title
+    {
+        font-size: 30px;
+    }
+
+
+    .modules .module .desc
+    {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+
+    .modules .module ul
+    {
+        margin-top: 32px;
+    }
+
+
+    .modules .module li + li
+    {
+        margin-top: 20px;
+    }
+
+    .modules .module li
+    {
+        font-size: 17px;
+        line-height: 25px;
+
+        min-height: 32px;
+        padding-left: 52px;
+    }
+
+    .modules .module li .icon
+    {
+        width: 32px;
+        height: 32px;
+    }
+
+
+
+    /*-----------
+        Stats
+    -----------*/
+    .stats .block_head
+    {
+        margin-bottom: 52px;
+    }
+
+
+    .stats .item
+    {
+        font-size: 21px;
+        line-height: 160%;
+    }
+
+
+    .stats .item .val
+    {
+        font-size: 72px;
+    }
+
+
+    .stats .trusted
+    {
+        margin-top: 72px;
+    }
+
+
+
+    /*-------------
+        Trusted
+    -------------*/
+    .trusted
+    {
+        margin-bottom: 100px;
+    }
+
+
+    .trusted .logos
+    {
+        width: calc(50% - 24px);
+    }
+
+
+    .trusted .logos > *
+    {
+        height: 152px;
+    }
+
+
+    .trusted .data
+    {
+        width: calc(50% - 24px);
+    }
+
+
+    .trusted .pre_title
+    {
+        font-size: 16px;
+        line-height: 22px;
+
+        margin-bottom: 28px;
+        padding-left: 92px;
+    }
+
+    .trusted .pre_title:before
+    {
+        width: 68px;
+    }
+
+
+    .trusted .title
+    {
+        font-size: 30px;
+        line-height: 140%;
+    }
+
+
+    .trusted .desc
+    {
+        font-size: 16px;
+        line-height: 22px;
+
+        margin-top: 20px;
+    }
+
+
+    .trusted .link
+    {
+        font-size: 17px;
+        line-height: 21px;
+
+        margin-top: 36px;
+        padding: 16px 32px 18px;
+    }
+
+
+
+    /*--------------
+        Articles
+    --------------*/
+    .articles
+    {
+        margin-bottom: 88px;
+    }
+
+
+    .articles .block_head
+    {
+        margin-bottom: 56px;
+    }
+
+
+    .articles .row .list
+    {
+        width: calc(100% - 500px);
+    }
+
+    .articles .row .list > * + *
+    {
+        margin-top: 28px;
+    }
+
+
+
+    .articles .article .thumb
+    {
+        width: 172px;
+        height: 124px;
+
+        border-radius: 12px;
+    }
+
+
+    .articles .article .date
+    {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+
+    .articles .article .thumb + *
+    {
+        width: calc(100% - 192px);
+    }
+
+
+    .articles .article .name
+    {
+        font-size: 17px;
+        line-height: 23px;
+    }
+
+
+    .articles .article .desc
+    {
+        font-size: 15px;
+        line-height: 21px;
+
+        margin-top: 12px;
+    }
+
+
+
+    .articles .article.big
+    {
+        width: 472px;
+    }
+
+    .articles .article.big .thumb + *
+    {
+        margin-top: 24px;
+    }
+
+
+    .articles .article.big .name
+    {
+        font-size: 21px;
+    }
+
+
+    .articles .article.big .desc
+    {
+        width: 360px;
+    }
+
+
+
+    /*-----------------
+        Order block
+    -----------------*/
+    .order_block
+    {
+        margin-bottom: 88px;
+        padding: 64px 0 80px;
+    }
+
+
+    .order_block .block_head
+    {
+        margin-bottom: 48px;
+    }
+
+
+    .order_block .form
+    {
+        width: 600px;
+    }
+
+    .order_block .form .line
+    {
+        width: calc(100% - 248px);
+    }
+
+    .order_block .form .submit
+    {
+        width: 224px;
+    }
+
+
+
+    /*---------
+        FAQ
+    ---------*/
+    .faq
+    {
+        margin-bottom: 100px;
+    }
+
+
+    .faq .block_head
+    {
+        margin-bottom: 48px;
+    }
+
+
+
+
+    /*------------
+        Schema
+    ------------*/
+    .schema
+    {
+        margin-bottom: 100px;
+    }
+
+
+    .schema .block_head
+    {
+        margin-bottom: 56px;
+    }
+
+
+    .schema .data
+    {
+        width: calc(50% - 24px);
+    }
+
+
+    .schema .data .title
+    {
+        font-size: 30px;
+        line-height: 36px;
+
+        margin-bottom: 24px;
+    }
+
+
+    .schema .data .desc
+    {
+        font-size: 17px;
+        line-height: 25px;
+    }
+
+
+    .schema .data ol
+    {
+        margin-top: 36px;
+    }
+
+
+    .schema .data li
+    {
+        font-size: 17px;
+        line-height: 23px;
+
+        min-height: 40px;
+        padding-left: 64px;
+    }
+
+    .schema .data li:before
+    {
+        font-size: 20px;
+        line-height: 40px;
+
+        width: 40px;
+        height: 40px;
+
+        border-radius: 10px;
+    }
+
+    .schema .data li + li
+    {
+        margin-top: 20px;
+    }
+
+
+
+    .schema .quote
+    {
+        width: calc(50% - 24px);
+    }
+
+
+    .schema .quote .photo
+    {
+        width: 380px;
+        height: 444px;
+    }
+
+
+    .schema .quote .info
+    {
+        width: calc(100% - 40px);
+        margin-top: -140px;
+        padding: 28px 28px 28px 40px;
+
+        border-width: 10px;
+    }
+
+
+    .schema .quote .text
+    {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .schema .quote .text:before
+    {
+        left: -20px;
+    }
+
+
+    .schema .quote .cite
+    {
+        font-size: 17px;
+        line-height: 23px;
+
+        margin-top: 24px;
+    }
+
+
+    .schema .quote .stars
+    {
+        margin-top: 24px;
+    }
+
+    .schema .quote .stars .icon + .icon
+    {
+        margin-left: 1px;
+    }
+
+    .schema .quote .stars .icon
+    {
+        width: 18px;
+        height: 18px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer
+    {
+        padding: 64px 0 48px;
+    }
+
+
+
+    footer .logo
+    {
+        width: calc(50% - 40px);
+    }
+
+    footer .logo img
+    {
+        width: 180px;
+    }
+
+
+    footer .slogan
+    {
+        font-size: 18px;
+        line-height: 22px;
+
+        width: calc(50% - 40px);
+    }
+
+
+    footer .text
+    {
+        font-size: 17px;
+        line-height: 23px;
+
+        width: calc(50% - 40px);
+        margin-top: 48px;
+    }
+
+
+    footer .email,
+    footer .phone
+    {
+        font-size: 18px;
+        line-height: 24px;
+
+        width: calc(50% - 40px);
+        margin-top: 36px;
+    }
+
+
+    footer .copyright
+    {
+        font-size: 17px;
+        line-height: 23px;
+    }
+}

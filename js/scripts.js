@@ -2,6 +2,21 @@ $(() => {
 	// Ширина окна для ресайза
 	WW = $(window).width()
 
+	console.log(window.navigator.userAgent);
+	var md = new MobileDetect(window.navigator.userAgent);
+    if (md.mobile()) {
+        //$(".who_needs .item").data("aos-delay", "0");  
+        let elements = document.querySelectorAll(".who_needs .item");      
+        for (let elem of elements) {
+		    elem.setAttribute("data-aos-delay", "100");
+		}
+
+		elements = document.querySelectorAll(".advantages .item");      
+        for (let elem of elements) {
+		    elem.setAttribute("data-aos-delay", "100");
+		}
+    }
+
 	AOS.init();
 
 	const scroller = scrollama();
